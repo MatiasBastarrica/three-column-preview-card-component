@@ -1,0 +1,13 @@
+/* ### CSS VARIABLES ### */
+
+:root {
+  --primary-orange: hsl(31, 77%, 52%);
+  --primary-dark-cyan: hsl(184, 100%, 22%);
+  --primary-very-dark-cyan: hsl(179, 100%, 13%);
+
+  --neutral-white-transparent: hsla(0, 0%, 100%, 0.75);
+  --neutral-light-gray: hsl(0, 0%, 95%);
+
+  --ff-lexend-deca: "Lexend Deca", sans-serif;
+  --ff-big-shoulders: "Big Shoulders", sans-serif;
+}
