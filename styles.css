@@ -110,3 +110,29 @@ a.btn:hover {
   outline: 2px solid var(--neutral-light-gray);
   background-color: transparent;
 }
+
+/* ### MEDIA QUERIES ### */
+
+@media (min-width: 50em) {
+  .cards-container {
+    --stack-gap: 2.125rem;
+    display: flex;
+  }
+
+  .card {
+    padding: 2.8rem 3rem;
+  }
+
+  .card h2 {
+    font-size: 3rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+
+  .card a.btn {
+    margin-top: 6rem;
+    font-size: 1.125rem;
+  }
+}
