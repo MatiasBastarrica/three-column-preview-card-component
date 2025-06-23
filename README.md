@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My Solution](https://your-solution-url.com)
+- Solution URL: [My Solution](https://www.frontendmentor.io/solutions/three-column-card-WtU_FO2R55)
 - Live Site URL: [Live](https://matiasbastarrica.github.io/three-column-preview-card-component/)
 
 ## My process
