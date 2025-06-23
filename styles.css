@@ -5,7 +5,9 @@
   --primary-dark-cyan: hsl(184, 100%, 22%);
   --primary-very-dark-cyan: hsl(179, 100%, 13%);
 
+  /* paragraphs */
   --neutral-white-transparent: hsla(0, 0%, 100%, 0.75);
+  /* background, headings, buttons */
   --neutral-light-gray: hsl(0, 0%, 95%);
 
   --ff-lexend-deca: "Lexend Deca", sans-serif;
@@ -27,23 +29,72 @@ img {
 
 a.btn {
   text-decoration: none;
-  color: inherit;
+  color: var(--btn-color, inherit);
 }
 
 /* ### UTILITIES ### */
 
 .bg-orange {
+  --btn-color: var(--primary-orange);
   background-color: var(--primary-orange);
 }
 
 .bg-dark-cyan {
+  --btn-color: var(--primary-dark-cyan);
   background-color: var(--primary-dark-cyan);
 }
 
 .bg-very-dark-cyan {
+  --btn-color: var(--primary-very-dark-cyan);
   background-color: var(--primary-very-dark-cyan);
 }
 
 .stack > * + * {
   margin-top: var(--stack-gap, 1.5rem);
+}
+
+/* ### GENERAL STYLING ### */
+
+body {
+  font-family: var(--ff-lexend-deca);
+  font-weight: 400;
+  font-size: 0.938rem;
+  background-color: var(--neutral-light-gray);
+}
+
+main {
+  padding: 4.5rem 1.5rem;
+}
+
+/* ### CARDS CONTAINER ### */
+
+.cards-container {
+  border-radius: 0.6rem;
+  overflow: hidden;
+}
+
+/* ### CARD ### */
+
+.card {
+  padding: 3.5rem 3rem;
+}
+
+.card h2 {
+  font-family: var(--ff-big-shoulders);
+  font-weight: 700;
+  color: var(--neutral-light-gray);
+  font-size: 2.8rem;
+}
+
+.card p {
+  color: var(--neutral-white-transparent);
+  line-height: 1.8;
+}
+
+.card a.btn {
+  display: inline-block;
+  background-color: var(--neutral-light-gray);
+  padding: 0.8em 1.5em;
+  font-size: 1.055rem;
+  border-radius: 200px;
 }
